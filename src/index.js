@@ -47,7 +47,7 @@ function displayWeatherCondition(response) {
 function changeIcon(response) {
   let icon = document.querySelector("img.current-weather-icon");
   let iconEl = response.data.weather[0].icon;
-  // let iconEl = `50n`;
+  // let iconEl = `01d`;
   icon.setAttribute("src", `img/${iconEl}.png`);
   // icon.setAttribute(
   //   "src",
