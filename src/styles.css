@@ -1,0 +1,138 @@
+body {
+  font: arial;
+  color: #0c1b33;
+}
+ul {
+  padding-bottom: 0px;
+  padding: 10px;
+  list-style: none;
+  color: #1b1f3b;
+  border-left: 1px solid #0c1b3350;
+}
+
+li::first-letter {
+  font-size: medium;
+}
+
+a {
+  text-decoration: none;
+  color: #0c1b33;
+  font-size: 16px;
+}
+.container {
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.update {
+  font-size: small;
+}
+
+.img {
+  background: url(https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80)
+    no-repeat center top;
+  box-shadow: 0px 3px 19px 0px rgba(0, 0, 0, 0.5);
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.img-overlay {
+  background-color: #ffffff01;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  padding: 20px 40px 30px;
+}
+
+.input-grou {
+  height: 93px;
+  width: 295px;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 6px;
+}
+.btn-search,
+.btn-location {
+  /* background-color: #ffc107; */
+  --bs-btn-color: #6c757d;
+  --bs-btn-border-color: #6c757d;
+  --bs-btn-hover-color: #ffff;
+  --bs-btn-hover-bg: #ffc107;
+  --bs-btn-hover-border-color: #6c757d;
+  --bs-btn-focus-shadow-rgb: 108, 117, 125;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #6c757d;
+  --bs-btn-active-border-color: #6c757d;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-gradient: none;
+}
+
+button:hover {
+  font-size: 18px;
+  border: none;
+  background: #ffc107;
+}
+
+.overview {
+  margin: 20px 0;
+}
+.temperature {
+  font-size: 65px;
+  height: 100%;
+}
+.unit {
+  font-size: 19px;
+  vertical-align: 120%;
+}
+
+.current-weather-icon {
+  height: 60px;
+  width: 60px;
+
+  margin: 0 auto;
+  /* height: 80%;
+  width: 110%; */
+}
+
+.list {
+  height: 80px;
+  padding: 12px 10px;
+  font-size: 14px;
+}
+
+.weather-forecast {
+  color: white;
+  text-align: center;
+}
+.forecast {
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.forecast-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.link-code {
+  color: #30a8de;
+  font-size: 9px;
+}
+
+.weather-app-wrapper {
+  padding-top: 9px;
+  font-size: 9px;
+  color: #6c757d;
+  max-width: 900px;
+}
+
+.weather-forecast-temp-min {
+  color: #fff9;
+}
+
+/* .weather-forecast-temp-max {
+  font-weight: bold;
+} */
