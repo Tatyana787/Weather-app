@@ -20,10 +20,8 @@ function formatData(timestamp) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "8c27e32a44363e7c302056624eb9fac6";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 function displayWeatherCondition(response) {
@@ -46,17 +44,15 @@ function displayWeatherCondition(response) {
   getForecast(response.data.coord);
 }
 
-function changeIcon() {
+function changeIcon(response) {
   let icon = document.querySelector("img.current-weather-icon");
-  // let iconEl = response.data.weather[0].icon;
-  let iconEl = `02n-1`;
+  let iconEl = response.data.weather[0].icon;
+  // let iconEl = `50n`;
   icon.setAttribute("src", `img/${iconEl}.png`);
   // icon.setAttribute(
   //   "src",
   //   ` http://openweathermap.org/img/wn/${iconEl}@2x.png`
   // );
-
-  console.log(iconEl);
 }
 
 function getTemp(event) {
@@ -121,13 +117,14 @@ class="forecast-icon"
 src="img/forecast/${forecastDay.weather[0].icon}.png"
 alt=""
  />
-<div class="weather-forecast">
-<span class=weather-forecast-temp-max>${Math.round(
-          forecastDay.temp.max
-        )}º</span>
-<span class=weather-forecast-temp-min>/ ${Math.round(
-          forecastDay.temp.min
-        )}º</span>
+<div class=" weather-forecast">
+
+<span class="weather-forecast-temp-max">
+${Math.round(forecastDay.temp.max)}º
+
+
+<span class="weather-forecast-temp-min">
+/ ${Math.round(forecastDay.temp.min)}º
 </div>
 </div>`;
     }
