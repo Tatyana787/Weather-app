@@ -86,12 +86,8 @@ button:hover {
 }
 
 .current-weather-icon {
-  height: 60px;
-  width: 60px;
-
-  margin: 0 auto;
-  /* height: 80%;
-  width: 110%; */
+  height: 70px;
+  width: 70px;
 }
 
 .list {
